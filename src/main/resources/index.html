@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>BibliotecaApp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Estilo personalizado para o footer */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .content {
+      margin-bottom: 100px; /* Espaço extra na parte inferior do conteúdo principal */
+    }
+    .footer {
+      background-color: #F5F5DC; /* Cor de fundo mais clara */
+    }
+    .footer a {
+      color: #000000; /* Cor do texto dos links */
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">BibliotecaApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/usuario">Usuários</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/funcionario/lista">Funcionários</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Livros
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Livros de animais</a>
+            <a class="dropdown-item" href="#">Livros de esportes</a>
+            <a class="dropdown-item" href="#">Livros didáticos</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bibliotecas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container mt-5 content">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h3 class="text-center mb-4">Apresentação do Projeto</h3>
+      <p class="text-justify">A BibliotecaApp é um projeto inovador dedicado a fornecer acesso fácil e conveniente a uma vasta coleção de livros e recursos educacionais. Nosso principal objetivo é promover a leitura, o aprendizado e o desenvolvimento pessoal, oferecendo aos nossos usuários uma plataforma intuitiva e repleta de funcionalidades úteis.</p>
+
+      <h4>Finalidade</h4>
+      <p class="text-justify">Nossa finalidade é tornar a leitura acessível a todos, proporcionando um ambiente virtual acolhedor e rico em conteúdo. Queremos inspirar pessoas de todas as idades e origens a explorar novos mundos através da leitura e a expandir seus horizontes intelectuais.</p>
+
+      <h4>Objetivos</h4>
+      <ul class="list-group">
+        <li class="list-group-item text-justify">Facilitar o acesso à informação e ao conhecimento através de uma plataforma online.</li>
+        <li class="list-group-item text-justify">Promover a leitura como uma atividade enriquecedora e divertida.</li>
+        <li class="list-group-item text-justify">Oferecer uma ampla variedade de livros em diferentes formatos e gêneros.</li>
+        <li class="list-group-item text-justify">Proporcionar recursos educacionais para auxiliar no aprendizado e no desenvolvimento pessoal.</li>
+        <li class="list-group-item text-justify">Criar uma comunidade de leitores engajados, compartilhando recomendações, resenhas e experiências literárias.</li>
+      </ul>
+
+      <h4>Funcionalidades Principais</h4>
+      <ul class="list-group">
+        <li class="list-group-item text-justify">Pesquisa avançada de livros por título, autor, gênero e palavras-chave.</li>
+        <li class="list-group-item text-justify">Reserva de livros online e renovação de empréstimos.</li>
+        <li class="list-group-item text-justify">Acesso a recursos digitais, como eBooks, audiolivros e revistas digitais.</li>
+        <li class="list-group-item text-justify">Recomendações personalizadas com base no histórico de leitura do usuário.</li>
+        <li class="list-group-item text-justify">Eventos literários, clubes de leitura e outras atividades interativas.</li>
+      </ul>
+
+      <p class="mt-4 text-justify">Estamos comprometidos em oferecer uma experiência excepcional aos nossos usuários e em promover a cultura da leitura em nossa comunidade. Junte-se a nós nesta jornada emocionante e descubra todo o potencial que a BibliotecaApp tem a oferecer!</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a href="https://github.com/leonardomunijz/MeuProjetoJavaAT" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/512px-Octicons-mark-github.svg.png" alt="GitHub" width="30" height="30"></a><br>
+    <p>&copy; 2024 BibliotecaApp. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>
