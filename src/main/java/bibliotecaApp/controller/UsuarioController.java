@@ -13,7 +13,7 @@ public class UsuarioController implements Route {
 		StringBuilder html = new StringBuilder();
 
 		Usuario usuario1 = new Usuario();
-		Usuario usuario2 = new Usuario("Pedro", "pedro@email.com", 28);
+		Usuario usuario2 = new Usuario("Pedro Almeida", "pedro@email.com", 28);
 
 		html.append("<!DOCTYPE html>");
 		html.append("<html>");
