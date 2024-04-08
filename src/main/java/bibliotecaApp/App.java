@@ -18,7 +18,10 @@ public class App {
 
 		//USU�RIO
 		Spark.get("/usuario/lista", new UsuarioController());
-		
+		Spark.get("/usuario/:nome/incluir", FuncionarioController.incluir);
+		Spark.get("/usuario/:id/excluir", FuncionarioController.excluir);
+		Spark.get("/usuario/:id", FuncionarioController.obter);
+
 		//FUNCION�RIO
 		Spark.get("/funcionario/lista", FuncionarioController.obterLista);
 		Spark.get("/funcionario/:nome/incluir", FuncionarioController.incluir);
