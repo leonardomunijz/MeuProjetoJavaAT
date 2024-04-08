@@ -82,7 +82,7 @@ public class UsuarioController implements Route {
 				"  <div class=\"row\">\n" +
 				"    <div class=\"col-md-8 offset-md-2\">");
 		html.append("<h3>Lista de Usuários</h3><br>");
-		html.append("<a href=\"/\" class=\"btn btn-success mr-2\">Criar Usuário</a>");
+		html.append("<a href=\"/usuario/newUser/incluir\" class=\"btn btn-success mr-2\">Criar Usuário</a>");
 		html.append("<a href=\"/\" class=\"btn btn-dark\">Voltar à Página Home</a>\n");
 
 		html.append("<div class=\"container mt-5\">\n" +

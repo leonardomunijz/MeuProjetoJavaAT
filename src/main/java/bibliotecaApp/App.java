@@ -11,7 +11,9 @@ import spark.Spark;
 public class App {
 
 	public static void main(String[] args) {
-		
+
+		System.out.println("--- [INICIALIZADO] App: BibliotecaApp ---");
+
 		Spark.port(8080);
 		
 		Spark.get("/", (req, res) -> {return App.class.getResourceAsStream("/index.html");});
@@ -23,7 +25,7 @@ public class App {
 		Spark.get("/usuario/:id", FuncionarioController.obter);
 
 		//FUNCION�RIO
-		Spark.get("/funcionario/lista", FuncionarioController.obterLista);
+		Spark.get("/funcionario/lista", new FuncionarioController());
 		Spark.get("/funcionario/:nome/incluir", FuncionarioController.incluir);
 		Spark.get("/funcionario/:id/excluir", FuncionarioController.excluir);
 		Spark.get("/funcionario/:id", FuncionarioController.obter);

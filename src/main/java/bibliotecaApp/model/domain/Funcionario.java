@@ -11,13 +11,19 @@ public class Funcionario {
 	public Funcionario() {
 		this.setNome("Elberth Moraes");
 		this.setCargo("Professor");
-		this.setSalario(999);
+		this.setSalario(1580);
 	}
 	
 	public Funcionario(String nome) {
 		this();
 		this.setNome(nome);
-	}	
+	}
+
+	public Funcionario(String nome, String cargo, float salario	) {
+		this.setNome(nome);
+		this.setCargo(cargo);
+		this.setSalario(salario);
+	}
 
 	@Override
 	public String toString() {
