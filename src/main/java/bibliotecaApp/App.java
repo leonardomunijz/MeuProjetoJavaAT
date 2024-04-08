@@ -2,6 +2,10 @@ package bibliotecaApp;
 
 import bibliotecaApp.controller.FuncionarioController;
 import bibliotecaApp.controller.UsuarioController;
+import bibliotecaApp.controller.BibliotecaController;
+import bibliotecaApp.controller.LivrosAnimaisController;
+import bibliotecaApp.controller.LivrosEsportesController;
+
 import spark.Spark;
 
 public class App {
@@ -12,13 +16,18 @@ public class App {
 		
 		Spark.get("/", (req, res) -> {return App.class.getResourceAsStream("/index.html");});
 
-		//USUÁRIO
-		Spark.get("/usuario", new UsuarioController());
+		//USUï¿½RIO
+		Spark.get("/usuario/lista", new UsuarioController());
 		
-		//FUNCIONÁRIO
+		//FUNCIONï¿½RIO
 		Spark.get("/funcionario/lista", FuncionarioController.obterLista);
 		Spark.get("/funcionario/:nome/incluir", FuncionarioController.incluir);
 		Spark.get("/funcionario/:id/excluir", FuncionarioController.excluir);
 		Spark.get("/funcionario/:id", FuncionarioController.obter);
+
+		Spark.get("/livrosAnimais/lista", new LivrosAnimaisController());
+		Spark.get("/livrosEsportes/lista", new LivrosEsportesController());
+
+		Spark.get("/biblioteca/lista", new BibliotecaController());
 	}
 }

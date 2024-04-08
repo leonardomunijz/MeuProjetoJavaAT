@@ -1,6 +1,6 @@
 package bibliotecaApp.model.domain;
 
-public class Livro {
+public class LivrosEsportes {
 
 	private String titulo;
 	private String autor;
@@ -8,11 +8,11 @@ public class Livro {
 	private String genero;
 	private boolean disponibilidade;
 
-	public Livro(){
-		this.setTitulo("As Aventuras de Alice no País das Maravilhas");
-		this.setAutor("Lewis Carroll");
-		this.setAnoPublicacao(1865);
-		this.setGenero("Fantasia / Aventura / Literatura Infantojuvenil");
+	public LivrosEsportes(){
+		this.setTitulo("A Arte de Correr na Chuva");
+		this.setAutor("Garth Stein");
+		this.setAnoPublicacao(2008);
+		this.setGenero("Ficção / Drama / Esportes");
 		this.setDisponibilidade(true);
 	}
 

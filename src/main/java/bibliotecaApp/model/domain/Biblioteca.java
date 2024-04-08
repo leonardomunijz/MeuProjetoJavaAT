@@ -1,5 +1,6 @@
 package bibliotecaApp.model.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Biblioteca {
@@ -10,9 +11,17 @@ public class Biblioteca {
 	private Funcionario funcionario;
 	private List<Livro> livros;
 
+	public Biblioteca() {
+		this.setNome("Biblioteca XYZ");
+		this.setLocalizacao("Rio de Janeiro, RJ");
+		this.setAnoInicialFuncionamento(2024);
+		this.setFuncionario(new Funcionario());
+		this.setLivros(new ArrayList<Livro>());
+	}
+
 	@Override
 	public String toString() {
-		return "Biblioteca " + nome;
+		return "Nome da Biblioteca: " + getNome() + "; Localização: " + getLocalizacao() + "; Funcionário: " + getFuncionario() + "; Livros: " + getLivros();
 	}
 
 	public String getNome() {

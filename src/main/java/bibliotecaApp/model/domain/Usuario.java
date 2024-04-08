@@ -7,7 +7,15 @@ public class Usuario {
 	private int idade;
 
 	public Usuario() {
-		this.setNome("Elberth Moraes");
+		this.setNome("Leonardo Muniz");
+		this.setEmail("leonardo@email.com");
+		this.setIdade(25);
+	}
+
+	public Usuario(String nome, String email, int idade) {
+		this.setNome(nome);
+		this.setEmail(email);
+		this.setIdade(idade);
 	}
 	
 	public Usuario(String nome) {
@@ -16,7 +24,7 @@ public class Usuario {
 	
 	@Override
 	public String toString() {
-		return "A inclusão do usuário " + nome + " foi realizada com sucesso!";
+		return "A inclusão do usuário " + nome + " foi realizada com sucesso! \nNome: " + this.getNome() + "\nEmail: " + this.getEmail() + "\nIdade: " + this.getIdade();
 	}
 	
 	public String getNome() {
