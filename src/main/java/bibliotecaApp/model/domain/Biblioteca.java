@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Biblioteca {
 
+	private Integer id;
 	private String nome;
 	private String localizacao;
 	private int anoInicialFuncionamento;
@@ -14,9 +15,23 @@ public class Biblioteca {
 	public Biblioteca() {
 		this.setNome("Biblioteca XYZ");
 		this.setLocalizacao("Rio de Janeiro, RJ");
-		this.setAnoInicialFuncionamento(2024);
+		this.setAnoInicialFuncionamento(2005);
 		this.setFuncionario(new Funcionario());
 		this.setLivros(new ArrayList<Livro>());
+	}
+
+	public Biblioteca(String nome) {
+		this.setNome("Biblioteca XYZ");
+		this.setLocalizacao("Rio de Janeiro, RJ");
+		this.setAnoInicialFuncionamento(2005);
+		this.setFuncionario(new Funcionario());
+		this.setLivros(new ArrayList<Livro>());
+	}
+
+	public Biblioteca(String nome, String localizacao, int anoInicialFuncionamento) {
+		this.setNome(nome);
+		this.setLocalizacao(localizacao);
+		this.setAnoInicialFuncionamento(anoInicialFuncionamento);
 	}
 
 	@Override
@@ -43,6 +58,8 @@ public class Biblioteca {
 		this.anoInicialFuncionamento = anoInicialFuncionamento;
 	}
 
+
+
 	public Funcionario getFuncionario() {
 		return funcionario;
 	}
@@ -57,5 +74,13 @@ public class Biblioteca {
 
 	public void setLivros(List<Livro> livros) {
 		this.livros = livros;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Integer getId() {
+		return id;
 	}
 }

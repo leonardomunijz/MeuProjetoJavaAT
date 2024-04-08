@@ -56,7 +56,7 @@ public class FuncionarioController implements Route{
 		html.append("<!DOCTYPE html>");
 		html.append("<html>");
 		html.append("<head>");
-		html.append("<title>Lista de Usuários - BibliotecaApp</title>");
+		html.append("<title>Lista de Funcionários - BibliotecaApp</title>");
 		html.append("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\">\n" +
 				"  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\n" +
 				"  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>\n" +

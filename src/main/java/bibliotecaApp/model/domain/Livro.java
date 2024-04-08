@@ -7,8 +7,17 @@ public class Livro {
 	private int	anoPublicacao;
 	private String genero;
 	private boolean disponibilidade;
+	private Integer id;
 
 	public Livro(){
+		this.setTitulo("As Aventuras de Alice no País das Maravilhas");
+		this.setAutor("Lewis Carroll");
+		this.setAnoPublicacao(1865);
+		this.setGenero("Fantasia / Aventura / Literatura Infantojuvenil");
+		this.setDisponibilidade(true);
+	}
+
+	public Livro(String titulo){
 		this.setTitulo("As Aventuras de Alice no País das Maravilhas");
 		this.setAutor("Lewis Carroll");
 		this.setAnoPublicacao(1865);
@@ -51,4 +60,12 @@ public class Livro {
 	public void setDisponibilidade(boolean disponibilidade) {
 		this.disponibilidade = disponibilidade;
 	}
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }

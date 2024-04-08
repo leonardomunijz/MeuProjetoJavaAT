@@ -5,6 +5,7 @@ public class Usuario {
 	private String nome;
 	private String email;
 	private int idade;
+	private Integer id;
 
 	public Usuario() {
 		this.setNome("Leonardo Muniz");
@@ -48,5 +49,13 @@ public class Usuario {
 
 	public void setIdade(int idade) {
 		this.idade = idade;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Integer getId() {
+		return id;
 	}
 }

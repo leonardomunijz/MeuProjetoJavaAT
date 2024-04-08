@@ -15,7 +15,7 @@ public class App {
 		System.out.println("--- [INICIALIZADO] App: BibliotecaApp ---");
 
 		Spark.port(8080);
-		
+
 		Spark.get("/", (req, res) -> {return App.class.getResourceAsStream("/index.html");});
 
 		//USU�RIO
@@ -30,9 +30,22 @@ public class App {
 		Spark.get("/funcionario/:id/excluir", FuncionarioController.excluir);
 		Spark.get("/funcionario/:id", FuncionarioController.obter);
 
+		//LIVROS ANIMAIS
 		Spark.get("/livrosAnimais/lista", new LivrosAnimaisController());
-		Spark.get("/livrosEsportes/lista", new LivrosEsportesController());
+		Spark.get("/funcionario/:nome/incluir", FuncionarioController.incluir);
+		Spark.get("/funcionario/:id/excluir", FuncionarioController.excluir);
+		Spark.get("/funcionario/:id", FuncionarioController.obter);
 
+		//LIVROS ESPORTES
+		Spark.get("/livrosEsportes/lista", new LivrosEsportesController());
+		Spark.get("/funcionario/:nome/incluir", FuncionarioController.incluir);
+		Spark.get("/funcionario/:id/excluir", FuncionarioController.excluir);
+		Spark.get("/funcionario/:id", FuncionarioController.obter);
+
+		//BIBLIOTECA
 		Spark.get("/biblioteca/lista", new BibliotecaController());
+		Spark.get("/biblioteca/:nome/incluir", BibliotecaController.incluir);
+		Spark.get("/biblioteca/:id/excluir", BibliotecaController.excluir);
+		Spark.get("/biblioteca/:id", BibliotecaController.obter);
 	}
 }

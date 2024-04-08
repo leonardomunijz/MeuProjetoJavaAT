@@ -1,11 +1,49 @@
 package bibliotecaApp.controller;
 
+import bibliotecaApp.model.domain.Biblioteca;
 import bibliotecaApp.model.domain.Usuario;
+import bibliotecaApp.model.service.UsuarioService;
 import spark.Request;
 import spark.Response;
 import spark.Route;
 
 public class UsuarioController implements Route {
+
+	public static Route obterLista = (req, res) -> {
+
+		return UsuarioService.obterLista();
+	};
+
+	public static Route incluir = (req, res) -> {
+
+		String oNome = req.params("nome");
+
+		Usuario usuario = new Usuario(oNome);
+
+		UsuarioService.incluir(usuario);
+
+		return "Inclusão realizada com sucesso: "+usuario+"!";
+	};
+
+	public static Route excluir = (req, res) -> {
+
+		Integer index = Integer.valueOf(req.params("id"));
+
+		Usuario usuario = UsuarioService.obterPorId(index);
+
+		UsuarioService.excluir(index);
+
+		return "Exclusão realizada com sucesso: "+usuario+"!";
+	};
+
+	public static Route obter = (req, res) -> {
+
+		Integer index = Integer.valueOf(req.params("id"));
+
+		Usuario usuario = UsuarioService.obterPorId(index);
+
+		return "Recuperação realizada com sucesso: "+usuario+"!";
+	};
 
 	@Override
 	public String handle(Request request, Response response) throws Exception {
