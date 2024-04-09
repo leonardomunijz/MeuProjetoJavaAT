@@ -25,6 +25,14 @@ public class Livro {
 		this.setDisponibilidade(true);
 	}
 
+	public Livro(String titulo, String autor, int anoPublicacao, String genero, boolean disponibilidade){
+		this.setTitulo(titulo);
+		this.setAutor(autor);
+		this.setAnoPublicacao(anoPublicacao);
+		this.setGenero(genero);
+		this.setDisponibilidade(disponibilidade);
+	}
+
 	@Override
 	public String toString() {
 		return "Titulo do Livro: " + getTitulo() + "; Autor: " + getAutor() + "; Ano de Publicação: " + getAnoPublicacao() + "; Gênero: " + getGenero();

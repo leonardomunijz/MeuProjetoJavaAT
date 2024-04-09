@@ -84,7 +84,7 @@ public class FuncionarioController implements Route{
 		html.append("<body>");
 		html.append("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n" +
 				"  <div class=\"container\">\n" +
-				"    <a class=\"navbar-brand\" href=\"/\">BibliotecaApp</a>\n" +
+				"    <a class=\"navbar-brand\" href=\"#\"><img src=\"https://www.imagensempng.com.br/wp-content/uploads/2021/09/Icone-livros-Png.png\" alt=\"Ícone Livros\" width=\"30\" height=\"30\" class=\"d-inline-block align-top mr-2\">BibliotecaApp</a>" +
 				"    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n" +
 				"      <span class=\"navbar-toggler-icon\"></span>\n" +
 				"    </button>\n" +
@@ -138,7 +138,7 @@ public class FuncionarioController implements Route{
 				"                    <strong>Cargo:</strong> <span class=\"text-muted\">"+funcionario1.getCargo()+"</span>\n" +
 				"                </li>\n" +
 				"                <li class=\"list-group-item\">\n" +
-				"                    <strong>Salário:</strong> <span class=\"text-muted\">"+funcionario1.getSalario()+"</span>\n" +
+				"                    <strong>Salário:</strong> <span class=\"text-muted\"> R$"+funcionario1.getSalario()+"</span>\n" +
 				"                </li>\n" +
 				"            </ul>\n" +
 				"        </div>\n" +
@@ -168,7 +168,7 @@ public class FuncionarioController implements Route{
 				"                    <strong>Cargo:</strong> <span class=\"text-muted\">"+funcionario2.getCargo()+"</span>\n" +
 				"                </li>\n" +
 				"                <li class=\"list-group-item\">\n" +
-				"                    <strong>Salário:</strong> <span class=\"text-muted\">"+funcionario2.getSalario()+"</span>\n" +
+				"                    <strong>Salário:</strong> <span class=\"text-muted\"> R$"+funcionario2.getSalario()+"</span>\n" +
 				"                </li>\n" +
 				"            </ul>\n" +
 				"        </div>\n" +

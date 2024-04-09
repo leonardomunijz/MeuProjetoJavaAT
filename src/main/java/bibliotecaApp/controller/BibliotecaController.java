@@ -84,7 +84,7 @@ public class BibliotecaController implements Route {
         html.append("<body>");
         html.append("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n" +
                 "  <div class=\"container\">\n" +
-                "    <a class=\"navbar-brand\" href=\"/\">BibliotecaApp</a>\n" +
+                "    <a class=\"navbar-brand\" href=\"#\"><img src=\"https://www.imagensempng.com.br/wp-content/uploads/2021/09/Icone-livros-Png.png\" alt=\"Ícone Livros\" width=\"30\" height=\"30\" class=\"d-inline-block align-top mr-2\">BibliotecaApp</a>" +
                 "    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n" +
                 "      <span class=\"navbar-toggler-icon\"></span>\n" +
                 "    </button>\n" +

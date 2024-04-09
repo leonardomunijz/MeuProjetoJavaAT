@@ -1,6 +1,7 @@
 package bibliotecaApp.controller;
 
 import bibliotecaApp.model.domain.Biblioteca;
+import bibliotecaApp.model.domain.Livro;
 import bibliotecaApp.model.domain.LivrosEsportes;
 import bibliotecaApp.model.service.BibliotecaService;
 import spark.Request;
@@ -50,8 +51,8 @@ public class LivrosEsportesController implements Route {
 
         StringBuilder html = new StringBuilder();
 
-        Biblioteca biblioteca1 = new Biblioteca();
-        Biblioteca biblioteca2 = new Biblioteca("Biblioteca KidsHappy", "Brasilia, DF", 1999);
+        Livro livro3 = new Livro("LeBron", "Jeff Benedict", 2023, "Esportes / Biografia", true);
+        Livro livro4 = new Livro("Transformando suor em ouro", "Bernardinho", 2006, "Autoajuda / Esportes / Biografia", true);
 
         html.append("<!DOCTYPE html>");
         html.append("<html>");
@@ -84,7 +85,7 @@ public class LivrosEsportesController implements Route {
         html.append("<body>");
         html.append("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n" +
                 "  <div class=\"container\">\n" +
-                "    <a class=\"navbar-brand\" href=\"/\">BibliotecaApp</a>\n" +
+                "    <a class=\"navbar-brand\" href=\"#\"><img src=\"https://www.imagensempng.com.br/wp-content/uploads/2021/09/Icone-livros-Png.png\" alt=\"Ícone Livros\" width=\"30\" height=\"30\" class=\"d-inline-block align-top mr-2\">BibliotecaApp</a>" +
                 "    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n" +
                 "      <span class=\"navbar-toggler-icon\"></span>\n" +
                 "    </button>\n" +
@@ -125,6 +126,10 @@ public class LivrosEsportesController implements Route {
 
         html.append("<div class=\"container mt-5\">\n" +
                 "    <div class=\"row\">\n" +
+                "        <div class=\"col-md-4\">\n" + // Coluna para a imagem
+                "            <!-- Imagem do Livro -->\n" +
+                "            <img src=\"https://m.media-amazon.com/images/I/91XSX8D3EcL._SY466_.jpg\" class=\"img-fluid\" alt=\"Imagem do Livro\">\n" +
+                "        </div>\n" +
                 "        <div class=\"col-md-8\">\n" +
                 "            <!-- Lista de bibliotecas -->\n" +
                 "            <ul class=\"list-group\">\n" +
@@ -132,22 +137,20 @@ public class LivrosEsportesController implements Route {
                 "                    <h4>Livro #1:</h4>\n" +
                 "                </li>\n" +
                 "                <li class=\"list-group-item\">\n" +
-                "                    <strong>Nome:</strong> <span class=\"text-muted\">"+biblioteca1.getNome()+"</span>\n" +
+                "                    <strong>Título:</strong> <span class=\"text-muted\">"+livro3.getTitulo()+"</span>\n" +
                 "                </li>\n" +
                 "                <li class=\"list-group-item\">\n" +
-                "                    <strong>Localização: </strong> <span class=\"text-muted\">"+biblioteca1.getLocalizacao()+"</span>\n" +
+                "                    <strong>Autor: </strong> <span class=\"text-muted\">"+livro3.getAutor()+"</span>\n" +
                 "                </li>\n" +
                 "                <li class=\"list-group-item\">\n" +
-                "                    <strong>Ano de Fundação: </strong> <span class=\"text-muted\">"+biblioteca1.getAnoInicialFuncionamento()+"</span>\n" +
+                "                    <strong>Ano de Publicação: </strong> <span class=\"text-muted\">"+livro3.getAnoPublicacao()+"</span>\n" +
                 "                </li>\n" +
                 "            </ul>\n" +
-                "        </div>\n" +
-                "        <div class=\"col-md-4\">\n" +
                 "            <!-- Botões -->\n" +
-                "            <div class=\"text-center mt-3 mt-md-0\">\n" +
-                "                <a href=\"/usuario/1/\" class=\"btn btn-primary btn-block mb-2\">Editar</a> <!-- Adicionado 'btn-block' para ocupar toda a largura -->\n" +
-                "                <a href=\"/usuario/1\" class=\"btn btn-secondary btn-block mb-2\">Informações</a> <!-- Adicionado 'btn-block' para ocupar toda a largura -->\n" +
-                "                <a href=\"/usuario/1/excluir\" class=\"btn btn-danger btn-block\">Excluir</a> <!-- Adicionado 'btn-block' para ocupar toda a largura -->\n" +
+                "            <div class=\"text-right mt-3\">\n" +
+                "                <a href=\"/usuario/1/\" class=\"btn btn-primary ml-2\">Editar</a>\n" +
+                "                <a href=\"/usuario/1\" class=\"btn btn-secondary ml-2\">Informações</a>\n" +
+                "                <a href=\"/usuario/1/excluir\" class=\"btn btn-danger ml-2\">Excluir</a>\n" +
                 "            </div>\n" +
                 "        </div>\n" +
                 "    </div>\n" +
@@ -155,6 +158,10 @@ public class LivrosEsportesController implements Route {
 
         html.append("<div class=\"container mt-5\">\n" +
                 "    <div class=\"row\">\n" +
+                "        <div class=\"col-md-4\">\n" + // Coluna para a imagem
+                "            <!-- Imagem do Livro -->\n" +
+                "            <img src=\"https://m.media-amazon.com/images/I/81OQBJUYQ-L._SY466_.jpg\" class=\"img-fluid\" alt=\"Imagem do Livro\">\n" +
+                "        </div>\n" +
                 "        <div class=\"col-md-8\">\n" +
                 "            <!-- Lista de bibliotecas -->\n" +
                 "            <ul class=\"list-group\">\n" +
@@ -162,26 +169,28 @@ public class LivrosEsportesController implements Route {
                 "                    <h4>Livro #2:</h4>\n" +
                 "                </li>\n" +
                 "                <li class=\"list-group-item\">\n" +
-                "                    <strong>Nome:</strong> <span class=\"text-muted\">"+biblioteca2.getNome()+"</span>\n" +
+                "                    <strong>Título:</strong> <span class=\"text-muted\">"+livro4.getTitulo()+"</span>\n" +
                 "                </li>\n" +
                 "                <li class=\"list-group-item\">\n" +
-                "                    <strong>Localização:</strong> <span class=\"text-muted\">"+biblioteca2.getLocalizacao()+"</span>\n" +
+                "                    <strong>Autor:</strong> <span class=\"text-muted\">"+livro4.getAutor()+"</span>\n" +
                 "                </li>\n" +
                 "                <li class=\"list-group-item\">\n" +
-                "                    <strong>Ano de Fundação:</strong> <span class=\"text-muted\">"+biblioteca2.getAnoInicialFuncionamento()+"</span>\n" +
+                "                    <strong>Ano de Publicação:</strong> <span class=\"text-muted\">"+livro4.getAnoPublicacao()+"</span>\n" +
                 "                </li>\n" +
                 "            </ul>\n" +
-                "        </div>\n" +
-                "        <div class=\"col-md-4\">\n" +
                 "            <!-- Botões -->\n" +
-                "            <div class=\"text-center mt-3 mt-md-0\">\n" +
-                "                <a href=\"/usuario/2\" class=\"btn btn-primary btn-block mb-2\">Editar</a> <!-- Adicionado 'btn-block' para ocupar toda a largura -->\n" +
-                "                <a href=\"/usuario/2\" class=\"btn btn-secondary btn-block mb-2\">Informações</a> <!-- Adicionado 'btn-block' para ocupar toda a largura -->\n" +
-                "                <a href=\"/usuario/2/excluir\" class=\"btn btn-danger btn-block\">Excluir</a> <!-- Adicionado 'btn-block' para ocupar toda a largura -->\n" +
+                "            <div class=\"text-right mt-3\">\n" +
+                "                <a href=\"/usuario/2\" class=\"btn btn-primary ml-2\">Editar</a>\n" +
+                "                <a href=\"/usuario/2\" class=\"btn btn-secondary ml-2\">Informações</a>\n" +
+                "                <a href=\"/usuario/2/excluir\" class=\"btn btn-danger ml-2\">Excluir</a>\n" +
                 "            </div>\n" +
                 "        </div>\n" +
                 "    </div>\n" +
                 "</div>\n");
+
+
+
+
 
         html.append("");
         // html.append("<br><a href=\"/\" class=\"btn btn-dark\">Voltar á Página Home</a>\n" + "</div>\n");
