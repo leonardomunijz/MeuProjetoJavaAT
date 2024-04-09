@@ -50,14 +50,14 @@ Durante o desenvolvimento deste projeto, serão avaliadas diversas competências
 ## Conclusão
 Ao finalizar este projeto, espera-se que você tenha adquirido conhecimentos sólidos sobre o desenvolvimento de aplicações web com Spark Java, bem como demonstrado habilidades práticas em diversas áreas, como configuração de ambiente, desenvolvimento de APIs RESTful, manipulação de dados e integração com outras tecnologias.
 
-Nome Aluno: Leonardo Muniz
-Curso: Engenharia de Software
-Instituição: Instituto Infnet
-Professor: Elberth Lins Costa de Moraes
+** Nome Aluno: Leonardo Muniz
+** Curso: Engenharia de Software
+** Instituição: Instituto Infnet
+** Professor: Elberth Lins Costa de Moraes
 
-Links para os TPs Anteriores:
+## Links para os TPs Anteriores:
 
-TP1: [Acessar o reposióorio do TP1 aqui](https://github.com/leonardomunijz/MeuProjetoJavaTP1)
-TP2: [Acessar o reposióorio do TP2 aqui](https://github.com/leonardomunijz/MeuProjetoJavaTP2)
-TP3: [Acessar o reposióorio do TP3 aqui](https://github.com/leonardomunijz/MeuProjetoJavaTP3)
-Link para o Repositório do Projeto Spark Java: [Repositório do AT](https://github.com/leonardomunijz/MeuProjetoJavaAT)
+** TP1: [Acesse o reposióorio do TP1 aqui](https://github.com/leonardomunijz/MeuProjetoJavaTP1)
+** TP2: [Acesse o reposióorio do TP2 aqui](https://github.com/leonardomunijz/MeuProjetoJavaTP2)
+** TP3: [Acesse o reposióorio do TP3 aqui](https://github.com/leonardomunijz/MeuProjetoJavaTP3)
+** Link para o Repositório do Projeto Spark Java: [Acesse o repositório do AT aqui](https://github.com/leonardomunijz/MeuProjetoJavaAT)
